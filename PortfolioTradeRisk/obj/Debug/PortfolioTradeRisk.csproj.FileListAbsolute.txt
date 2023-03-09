@@ -1,0 +1,14 @@
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\bin\Debug\PortfolioTradeRisk.exe.config
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\bin\Debug\PortfolioTradeRisk.exe
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\bin\Debug\PortfolioTradeRisk.pdb
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.csproj.AssemblyReference.cache
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.csproj.SuggestedBindingRedirects.cache
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.Properties.Resources.resources
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.csproj.GenerateResource.cache
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.csproj.CoreCompileInputs.cache
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.exe
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.pdb
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\bin\Debug\Bloomberglp.Blpapi.dll
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\bin\Debug\Bloomberglp.Blpapi.xml
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.Form1.resources
+C:\Users\vince\source\PortfolioTradeRisk\PortfolioTradeRisk\obj\Debug\PortfolioTradeRisk.csproj.CopyComplete
