@@ -1,0 +1,42 @@
+{
+	lineItems: [
+		{
+			isin : "isin1",
+			size: 123
+			tweb: 100,
+			stream: 99,
+			dv01: 12
+		}
+	],
+
+	quote: {
+		source: "bval",
+		timing: "4pm",
+		side: "mid",
+		bidOffset: -5,
+		offerOffset: 10,
+		offsetType: PTS,
+		quoteProceeds: 64000,
+		sourcePrices: [
+			...
+		]
+	},
+
+	allocated: {
+		proceeds: 100000
+		allocatedPrices: [
+			{
+				isin: "isin"
+				value: 100
+				priceType: "SPREAD"
+				benchmark: "bmark"
+			},
+			{
+				isin: "isin"
+				value: 100
+				priceType: "PRICE"
+				benchmark: "bmark"
+			}
+		]
+	}
+}
