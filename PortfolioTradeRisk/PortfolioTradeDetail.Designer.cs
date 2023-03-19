@@ -125,7 +125,6 @@
             this.lineItemsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.lineItemsDataGridView.Size = new System.Drawing.Size(1559, 419);
             this.lineItemsDataGridView.TabIndex = 0;
-            this.lineItemsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -162,7 +161,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1096, 94);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -372,7 +370,6 @@
             this.label7.Size = new System.Drawing.Size(102, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "EUR -74,000";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -537,7 +534,6 @@
             this.button14.TabIndex = 7;
             this.button14.Text = "Refresh";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // panel4
             // 
@@ -686,7 +682,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PortfolioTradeDetail";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lineItemsDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

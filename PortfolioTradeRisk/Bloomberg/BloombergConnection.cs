@@ -1,22 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 using Session = Bloomberglp.Blpapi.Session;
-using Subscription = Bloomberglp.Blpapi.Subscription;
-using CorrelationID = Bloomberglp.Blpapi.CorrelationID;
 using Event = Bloomberglp.Blpapi.Event;
-using Message = Bloomberglp.Blpapi.Message;
 using SessionOptions = Bloomberglp.Blpapi.SessionOptions;
-using Bloomberglp.Blpapi;
-using System.Runtime.InteropServices.ComTypes;
 using System.Collections.Concurrent;
 
 namespace PortfolioTradeRisk.Bloomberg

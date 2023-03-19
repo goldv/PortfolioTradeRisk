@@ -48,7 +48,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "PortfolioTrade";
             this.Text = "PortfolioTrade";
-            this.Load += new System.EventHandler(this.PortfolioTrade_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

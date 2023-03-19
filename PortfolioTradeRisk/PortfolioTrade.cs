@@ -1,6 +1,7 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
 using PortfolioTradeRisk.Model;
+using PortfolioTradeRisk.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,37 +27,24 @@ namespace PortfolioTradeRisk
             this.DragDrop += new DragEventHandler(PortfolioTrade_DragDrop);
         }
 
-        private void PortfolioTrade_Load(object sender, EventArgs e)
-        {
-
-        }
-
         void PortfolioTrade_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
         }
 
-        void PortfolioTrade_DragDrop(object sender, DragEventArgs e)
+        async void PortfolioTrade_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             if(files.Length == 1)
             {
                 string file = files[0];
-                var config = new CsvConfiguration(CultureInfo.InvariantCulture)
-                {
-                    HasHeaderRecord = true,
-                    Delimiter = ",",
-                };
+                PortolioTradeLineItem[] portfolioTradeLineItems = await Util.CsvParser.parsePortfolioLineItems(file);
 
-                using (var reader = new StreamReader(file))
-                using (var csv = new CsvReader(reader, config))
-                {
-                    var records = csv.GetRecords<PortolioTradeLineItem>();
-
-                    PortfolioTradeDetail portolioTradeDetail = new PortfolioTradeDetail(records.ToArray<PortolioTradeLineItem>());
-                    portolioTradeDetail.Show();
-                }
+                PortfolioTradeDetail portolioTradeDetail = new PortfolioTradeDetail(portfolioTradeLineItems);
+                portolioTradeDetail.Show();
+               
             }
         }
+        
     }
 }
