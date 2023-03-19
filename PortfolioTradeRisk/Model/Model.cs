@@ -25,11 +25,17 @@ namespace PortfolioTradeRisk.Model
             lineItemsBindingSource.DataSource = this.lineItemsDataTable;
             this.lineItemsDataGridView.DataSource = lineItemsBindingSource;
 
+            foreach(PortolioTradeLineItem item in this.portfolioTradeLineItems)
+            {
+                Console.WriteLine("line item: " + item);
+            }
+            
             Initialise();
         }
 
         private void Initialise()
         {
+            Console.WriteLine("initialising");
             this.lineItemsDataTable.Columns.Add("Trade#", typeof(string));
             this.lineItemsDataTable.Columns.Add("Side", typeof(string));
             this.lineItemsDataTable.Columns.Add("Amount", typeof(double));
@@ -62,9 +68,11 @@ namespace PortfolioTradeRisk.Model
             this.lineItemsDataTable.Columns.Add("BVAL Spr", typeof(double));
             this.lineItemsDataTable.Columns.Add("BVAL Px", typeof(double));
             this.lineItemsDataTable.Columns.Add("BVAL Proceeds", typeof(double));
-            
-            foreach(PortolioTradeLineItem ptItem in portfolioTradeLineItems)
+
+            Console.WriteLine("columns added " + this.portfolioTradeLineItems.Length);
+            foreach(PortolioTradeLineItem ptItem in this.portfolioTradeLineItems)
             {
+                Console.WriteLine("item: " + ptItem);
                 DataRow row = lineItemsDataTable.NewRow();
                 row[lineItemsDataTable.Columns.IndexOf("Trade#")] = ptItem.TradeId;
                 row[lineItemsDataTable.Columns.IndexOf("Side")] = ptItem.Side;
@@ -72,9 +80,11 @@ namespace PortfolioTradeRisk.Model
                 row[lineItemsDataTable.Columns.IndexOf("Currency")] = ptItem.Currency;
                 row[lineItemsDataTable.Columns.IndexOf("Issue")] = ptItem.Issue;
                 row[lineItemsDataTable.Columns.IndexOf("Settle")] = ptItem.Settle;
-
-                Console.Write(row.ToString());
+                lineItemsDataTable.Rows.Add(row);
+                
             }
+
+            
 
         }
     }
